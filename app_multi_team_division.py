@@ -88,7 +88,7 @@ with st.sidebar:
     if st.button("対戦履歴をリセット"):
         st.session_state.pair_history = {}
         st.success("履歴をクリアしました。")
-    st.write(f"現在の記録ペア数: {len(st.session_state.pair_history)}")
+    st.write(f"現在の編成回数: {len(st.session_state.pair_history)}")
 
 # 初期データの作成
 if "df" not in st.session_state:
