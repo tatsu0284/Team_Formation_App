@@ -66,6 +66,7 @@ def solve_multi_team_division(member_df, num_per_team, iterations=10000):
 # --- UI部分 ---
 st.markdown('<h4>🏃‍♂️ チーム編成アプリ（4名〜）</h4>', unsafe_allow_html=True)
 # st.write("メンバーの名前と身長を入力してください（4名〜）。")
+st.write("本日の参加メンバー")
 
 # サイドバー設定
 with st.sidebar:
@@ -159,7 +160,7 @@ edited_df = st.data_editor(
 # ➕ メンバーをクイック追加（パターン①のUI）
 # =================================================================
 # st.markdown("##### ➕ メンバーをクイック追加")
-st.write("メンバーの名前と身長を入力してください。")
+st.write("追加メンバーの名前と身長を入力してください。")
 c1, c2, c3 = st.columns([2, 2, 1.5])
 with c1:
     new_name = st.text_input("名前", key="input_name", placeholder="例: たろう", label_visibility="collapsed")
